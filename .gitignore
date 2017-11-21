@@ -1,0 +1,8 @@
+# Ignore eclipse files
+/java/.metadata
+/java/**/.project
+/java/**/.settings
+/java/**/.classpath
+
+# Ignore binaries
+**/bin/
