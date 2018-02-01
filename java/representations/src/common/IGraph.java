@@ -11,17 +11,15 @@ import java.util.Set;
 
 public interface IGraph<V,E> {
 	
-	boolean adjacent(IVertex<V> v1, IVertex<V> v2);
+	boolean adjacents(IVertex<V> v1, IVertex<V> v2);
 	Set<IVertex<V>> neighbors(IVertex<V> v);
 	
 	void addVertex(IVertex<V> v);
 	void removeVertex(IVertex<V> v);
-	VertexValue<V> getValue(IVertex<V> v);
-	void setValue(IVertex<V> v, VertexValue<V> val);
 	
-	void addEdge(IEdge<E> e);
-	void removeEdge(IEdge<E> e);
-	EdgeValue<E> getValue(IEdge<E> e);
-	void setValue(IEdge<E> e, EdgeValue<E> val);
+	void addEdge(IVertex<V> v1, IVertex<V> v2, EdgeValue<E> e);
+	void removeEdge(IVertex<V> v1, IVertex<V> v2);
+	EdgeValue<E> getValue(IVertex<V> v1, IVertex<V> v2);
+	void setValue(IVertex<V> v1, IVertex<V> v2, EdgeValue<E> val);
 
 }

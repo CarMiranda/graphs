@@ -9,7 +9,7 @@ package common;
 
 public abstract class Value<T> {
 
-	private T value;
+	protected T value;
 	
 	public Value(T v) {
 		this.value = v;

@@ -7,7 +7,7 @@
 
 package common;
 
-public class EdgeValue<T extends Object> {
+public class EdgeValue<T> {
 	
 	private T value;
 	
