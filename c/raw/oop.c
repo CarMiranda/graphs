@@ -1,4 +1,3 @@
-#include "list.h"
 
 typedef struct Vertex {
     char label;
